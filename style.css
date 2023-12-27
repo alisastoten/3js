@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+}
+
+#info {
+	position: absolute;
+	top: 40px;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+	width: 100%;
+	text-align: center;
+	z-index: 100;
+	display: block;
+}
