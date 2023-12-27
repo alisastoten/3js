@@ -9,7 +9,7 @@ document.body.appendChild(renderer.domElement);
 scene.background = new THREE.Color(0xffedfc);
 
 var boxGeometry = new THREE.BoxGeometry(3, 1.5, 0.4);
-var boxMaterial = new THREE.MeshStandardMaterial({ color: 0xdbdbdb });
+var boxMaterial = new THREE.MeshStandardMaterial({ color: 0xd962c5 });
 var box = new THREE.Mesh(boxGeometry, boxMaterial);
 box.position.set(0, 1, 0);
 scene.add(box);
@@ -17,16 +17,13 @@ scene.add(box);
 camera.position.set(2, 2.5, 4);
 camera.lookAt(scene.position); 
 
-var light = new THREE.PointLight(0xb6dec1, 3, 100);
+var light = new THREE.PointLight(0xe6a3da, 3, 100);
 light.position.set(0, 2, 2);
 scene.add(light);
 
 var directionalLight = new THREE.DirectionalLight(0xd672c5, 0.5);
 directionalLight.position.set(-5, 0, 2);
 scene.add(directionalLight);
-
-var ambientLight = new THREE.AmbientLight(0x404040);
-scene.add(ambientLight);
 
 var animate = function () {
     requestAnimationFrame(animate);
